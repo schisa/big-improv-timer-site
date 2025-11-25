@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>About – Big Improv Timer</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <header class="site-header">
+    <div class="container header-inner">
+      <div class="brand">
+        <img
+          src="assets/BIT-Logo.png"
+          alt="Big Improv Timer logo"
+          class="brand-logo"
+        />
+        <span class="brand-name">Big Improv Timer</span>
+      </div>
+      <nav class="site-nav">
+        <a href="index.html">Home</a>
+        <a href="about.html">About</a>
+        <a href="privacy.html">Privacy</a>
+      </nav>
+    </div>
+  </header>
+
+  <main class="page-main">
+    <div class="container">
+      <header class="page-header">
+        <h1>About Big Improv Timer</h1>
+        <p>
+          Big Improv Timer was created by <a href="https://www.stephenchisa.com">Stephen</a>. He used Warp, Sublime, and Procreate to create this app. 
+        </p>
+      </header>
+
+      <section class="page-content">
+        <h2>Why?</h2>
+        <p>
+          All of my improv teams always have a hassle trying and find a timer that works for our practices. YouTube timer videos have weird ads in the middle of them, the default timer app is too small to read from across the room, and other websites don't prevent the devices from going to sleep mid set. I built this app so my team's didn't have to waste 3 minutes getting a timer set up. I hope you can also get 3 minutes back for your practices using Big Improv Timer! 
+        </p>
+        <h2>Get in touch</h2>
+        <p>
+          You can add your preferred contact details here—for example an email address, social
+          profile, or website—so people can reach you with feedback or questions.
+        </p>
+      </section>
+    </div>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <p class="footer-brand">&copy; <span id="year"></span> Big Improv Timer</p>
+      <div class="footer-links">
+        <a href="about.html">About</a>
+        <a href="privacy.html">Privacy Policy</a>
+      </div>
+    </div>
+  </footer>
+
+  <script>
+    document.getElementById('year').textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>

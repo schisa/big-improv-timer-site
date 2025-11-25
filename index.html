@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Big Improv Timer – Rehearsal Timer for Improv Teams</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta
+    name="description"
+    content="Big Improv Timer is a simple, large-format rehearsal timer designed for improv teams. Keep your sets on track with clear timing in portrait or landscape."
+  />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <header class="site-header">
+    <div class="container header-inner">
+      <div class="brand">
+        <img
+          src="assets/BIT-Logo.png"
+          alt="Big Improv Timer logo"
+          class="brand-logo"
+        />
+        <span class="brand-name">Big Improv Timer</span>
+      </div>
+      <nav class="site-nav">
+        <a href="about.html">About</a>
+        <a href="privacy.html">Privacy</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero">
+      <div class="container hero-inner">
+        <div class="hero-copy">
+          <h1>Actually see how much time you have left on a tiny screen.</h1>
+          <p class="hero-subtitle">
+            Big Improv Timer is a bold, easy-to-read rehearsal timer designed for improv teams.
+            Quickly see how much time you have left from across the room.
+          </p>
+          <div class="hero-actions">
+            <!-- Replace `#` with your real App Store URL when available -->
+            <a class="button primary" href="#" target="_blank" rel="noopener">
+              Download on the App Store
+            </a>
+          </div>
+          <p class="platform-note">Available on iOS</p>
+        </div>
+
+        <div class="hero-visual">
+          <div class="screenshot-frame">
+            <img
+              src="assets/green.PNG"
+              alt="Big Improv Timer timer view with green background"
+            />
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="screenshots" class="screenshots">
+      <div class="container">
+        <div class="screenshots-grid">
+          <figure class="screenshot-card">
+            <div class="screenshot-frame">
+              <img
+                src="assets/green-2.PNG"
+                alt="Big Improv Timer screenshot with green timer display"
+              />
+            </div>
+            <figcaption>Timer early in a rehearsal (green).</figcaption>
+          </figure>
+
+          <figure class="screenshot-card">
+            <div class="screenshot-frame">
+              <img
+                src="assets/yellow.PNG"
+                alt="Big Improv Timer screenshot with yellow timer display"
+              />
+            </div>
+            <figcaption>Timer mid-rehearsal (yellow).</figcaption>
+          </figure>
+
+          <figure class="screenshot-card">
+            <div class="screenshot-frame">
+              <img
+                src="assets/red.PNG"
+                alt="Big Improv Timer screenshot with red timer display"
+              />
+            </div>
+            <figcaption>Timer when it&rsquo;s time to wrap up (red).</figcaption>
+          </figure>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <p class="footer-brand">&copy; <span id="year"></span> Big Improv Timer</p>
+      <div class="footer-links">
+        <a href="about.html">About</a>
+        <a href="privacy.html">Privacy Policy</a>
+      </div>
+    </div>
+  </footer>
+
+  <script>
+    // Keep the footer year current
+    document.getElementById('year').textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>
