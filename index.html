@@ -45,7 +45,7 @@
           </p>
           <div class="hero-actions">
             <a class="button primary" href="https://timer.bigimprovtimer.xyz">
-              Start the Big Improv Timer
+              Set the Big Improv Timer
             </a>
           </div>
           <p class="platform-note">Use it right in your browser.</p>
@@ -64,37 +64,25 @@
 
     <section id="screenshots" class="screenshots">
       <div class="container">
-        <div class="screenshots-grid">
-          <figure class="screenshot-card">
-            <div class="screenshot-frame">
-              <img
-                src="assets/green-2.PNG"
-                alt="Big Improv Timer screenshot with green timer display"
-              />
-            </div>
-            <figcaption>Timer early in a rehearsal (green).</figcaption>
-          </figure>
+        <h2>How the colors work</h2>
+        <p class="section-intro">
+          Big Improv Timer changes the background color based on how much of your set time is left.
+        </p>
 
-          <figure class="screenshot-card">
-            <div class="screenshot-frame">
-              <img
-                src="assets/yellow.PNG"
-                alt="Big Improv Timer screenshot with yellow timer display"
-              />
-            </div>
-            <figcaption>Timer mid-rehearsal (yellow).</figcaption>
-          </figure>
-
-          <figure class="screenshot-card">
-            <div class="screenshot-frame">
-              <img
-                src="assets/red.PNG"
-                alt="Big Improv Timer screenshot with red timer display"
-              />
-            </div>
-            <figcaption>Timer when it&rsquo;s time to wrap up (red).</figcaption>
-          </figure>
-        </div>
+        <ul class="color-rules">
+          <li>
+            <span class="color-chip color-safe" aria-hidden="true"></span>
+            <span class="rule-text"><strong>Green</strong> – more than half of the time is left</span>
+          </li>
+          <li>
+            <span class="color-chip color-warning" aria-hidden="true"></span>
+            <span class="rule-text"><strong>Orange/Yellow</strong> – Less than half of the time is left</span>
+          </li>
+          <li>
+            <span class="color-chip color-final" aria-hidden="true"></span>
+            <span class="rule-text"><strong>Red</strong> – Less than 10% of the time is left</span>
+          </li>
+        </ul>
       </div>
     </section>
 

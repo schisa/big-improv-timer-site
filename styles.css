@@ -189,6 +189,27 @@ main {
 .hero-visual {
   display: flex;
   justify-content: center;
+  align-items: center;
+}
+
+.hero-visual .screenshot-frame {
+  max-width: 360px;
+}
+
+.hero-visual .screenshot-frame img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+/* Generic screenshot frame (pseudo-device border) */
+.screenshot-frame {
+  background: radial-gradient(circle at left top, rgba(255, 181, 69, 0.22), #020617 55%);
+  border-radius: var(--radius-lg);
+  padding: 12px;
+  box-shadow: 0 10px 30px rgba(15, 23, 42, 0.7);
+  border: 1px solid rgba(148, 163, 184, 0.35);
+  margin-bottom: 10px;
 }
 
 .timer-mock {
@@ -260,34 +281,47 @@ main {
   gap: 22px;
 }
 
-.screenshot-card {
-  margin: 0;
+.color-rules {
+  list-style: none;
+  margin: 0 0 18px;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.color-rules li {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  font-size: 0.95rem;
   color: var(--color-text-muted);
-  font-size: 0.9rem;
 }
 
-.screenshot-frame {
-  background: radial-gradient(circle at top left, var(--color-accent-soft), #020617 55%);
-  border-radius: var(--radius-lg);
-  padding: 12px;
-  box-shadow: var(--shadow-subtle);
-  border: 1px solid rgba(148, 163, 184, 0.35);
-  margin-bottom: 10px;
+.color-chip {
+  width: 18px;
+  height: 18px;
+  border-radius: 999px;
+  border: 1px solid rgba(15, 23, 42, 0.8);
+  box-shadow: 0 0 0 1px rgba(15, 23, 42, 0.4);
 }
 
-.screenshot-frame img {
-  display: block;
-  width: 100%;
-  border-radius: calc(var(--radius-lg) - 6px);
+.color-safe {
+  background-color: #00ff00;
 }
 
-.screenshot-frame.portrait {
-  aspect-ratio: 9 / 16;
+.color-warning {
+  background-color: #ffaa00;
 }
 
-.screenshot-frame.landscape {
-  aspect-ratio: 16 / 9;
+.color-final {
+  background-color: #ff0000;
 }
+
+.rule-text code {
+  font-size: 0.85rem;
+}
+
 
 /* Features */
 
@@ -385,6 +419,23 @@ main {
   color: var(--color-text-muted);
 }
 
+.page-content a,
+.page-header a {
+  color: var(--color-accent);
+  text-decoration: underline;
+}
+
+.page-content a:visited,
+.page-header a:visited {
+  color: #e29b35; /* slightly darker for visited state, still high contrast */
+}
+
+.page-content a:focus-visible,
+.page-header a:focus-visible {
+  outline: 2px solid var(--color-accent-2);
+  outline-offset: 2px;
+}
+
 .page-content h2 {
   font-size: 1.1rem;
   color: var(--color-text);
@@ -413,7 +464,7 @@ main {
   }
 
   .hero-visual {
-    order: -1;
+    margin-top: 18px;
   }
 
   .header-inner {
