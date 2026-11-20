@@ -6,7 +6,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <meta
     name="description"
-    content="Big Improv Timer is a simple, large-format rehearsal timer designed for improv teams. Keep your sets on track with clear timing in portrait or landscape."
+    content="Big Improv Timer is a large-format rehearsal timer for improv teams. Count down from a set length or count up to one — readable from across the room."
   />
   <link rel="icon" type="image/png" href="/favicon/favicon-96x96.png" sizes="96x96" />
   <link rel="icon" type="image/svg+xml" href="/favicon/favicon.svg" />
@@ -15,7 +15,7 @@
   <meta name="apple-mobile-web-app-title" content="BIT" />
   <link rel="manifest" href="/favicon/site.webmanifest" />
   <meta property="og:title" content="Big Improv Timer" />
-  <meta property="og:description" content="A full-screen rehearsal timer built for improv teams. Clearly see your time from across the room." />
+  <meta property="og:description" content="A full-screen rehearsal timer built for improv teams. Count up or down, and see your time from across the room." />
   <meta property="og:image" content="https://bigimprovtimer.xyz/assets/green.PNG" />
   <meta property="og:url" content="https://bigimprovtimer.xyz/" />
   <meta property="og:type" content="website" />
@@ -74,25 +74,43 @@
       <div class="container">
         <h2>How the colors work</h2>
         <p class="section-intro">
-          Big Improv Timer changes the background color based on how much of your set time is left.
+          In either mode, Big Improv Timer changes color based on how close you are to the end of the set.
         </p>
 
         <ul class="color-rules">
           <li>
             <span class="color-chip color-safe" aria-hidden="true"></span>
-            <span class="rule-text"><strong>Green</strong> – more than half of the time is left</span>
+            <span class="rule-text"><strong>Green</strong> – more than half of the set is left</span>
           </li>
           <li>
             <span class="color-chip color-warning" aria-hidden="true"></span>
-            <span class="rule-text"><strong>Orange/Yellow</strong> – less than half of the time is left</span>
+            <span class="rule-text"><strong>Orange/Yellow</strong> – less than half of the set is left</span>
           </li>
           <li>
             <span class="color-chip color-final" aria-hidden="true"></span>
-            <span class="rule-text"><strong>Red</strong> – less than 10% of the time is left</span>
+            <span class="rule-text"><strong>Red</strong> – less than 10% of the set is left</span>
           </li>
           <li>
             <span class="color-chip color-final" aria-hidden="true"></span>
-            <span class="rule-text"><strong>Done</strong> – time is up; the display switches to a pulsing "DONE"</span>
+            <span class="rule-text"><strong>Done / past</strong> – countdown ends on "DONE"; count-up keeps going with "PAST TIME"</span>
+          </li>
+        </ul>
+      </div>
+    </section>
+
+    <section class="screenshots">
+      <div class="container">
+        <h2>Count down or count up</h2>
+        <p class="section-intro">
+          Open the gear and pick the mode that fits your rehearsal. The label above the digits
+          follows your choice.
+        </p>
+        <ul class="color-rules">
+          <li>
+            <span class="rule-text"><strong>Count down from</strong> – watch time remaining until a pulsing "DONE"</span>
+          </li>
+          <li>
+            <span class="rule-text"><strong>Count up to</strong> – start at 0:00 and run to your target; past the target it stays red and shows "PAST TIME"</span>
           </li>
         </ul>
       </div>
