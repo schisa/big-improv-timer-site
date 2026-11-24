@@ -203,6 +203,12 @@ main {
   margin-bottom: 10px;
 }
 
+.screenshot-frame img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
 
 /* Screenshots */
 
@@ -263,6 +269,23 @@ main {
 
 .rule-text code {
   font-size: 0.85rem;
+}
+
+.feature-shots {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 16px;
+  margin: 0 0 22px;
+}
+
+.feature-shots .screenshot-frame {
+  margin-bottom: 0;
+}
+
+.feature-shots img {
+  width: 100%;
+  height: auto;
+  display: block;
 }
 
 
@@ -378,6 +401,10 @@ main {
 
   .hero-visual {
     margin-top: 18px;
+  }
+
+  .feature-shots {
+    grid-template-columns: minmax(0, 1fr);
   }
 
   .header-inner {
