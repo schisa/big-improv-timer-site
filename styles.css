@@ -50,15 +50,57 @@ main {
   flex: 1;
 }
 
+/* Sticky top stack (promo + header) */
+
+.site-top {
+  position: sticky;
+  top: 0;
+  z-index: 20;
+}
+
+.promo-banner {
+  background: #f5f5f4;
+  border-bottom: 1px solid rgba(15, 23, 42, 0.08);
+}
+
+.promo-banner-inner {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 9px 16px;
+  text-align: center;
+}
+
+.promo-banner-text {
+  margin: 0;
+  max-width: 52rem;
+  font-size: 0.8125rem;
+  line-height: 1.4;
+  font-weight: 450;
+  letter-spacing: 0.01em;
+  color: #1c1917;
+}
+
+.promo-banner-cta {
+  display: inline;
+  margin-left: 0.4em;
+  color: #1c1917;
+  font-weight: 600;
+  text-decoration: none;
+  white-space: nowrap;
+}
+
+.promo-banner-cta:hover {
+  text-decoration: underline;
+  text-underline-offset: 2px;
+}
+
 /* Header */
 
 .site-header {
   border-bottom: 1px solid rgba(148, 163, 184, 0.18);
   backdrop-filter: blur(18px);
   background: linear-gradient(to right, rgba(15, 23, 42, 0.92), rgba(15, 23, 42, 0.72));
-  position: sticky;
-  top: 0;
-  z-index: 10;
 }
 
 .header-inner {
@@ -407,6 +449,10 @@ main {
     grid-template-columns: minmax(0, 1fr);
   }
 
+  .promo-banner-text {
+    font-size: 0.75rem;
+  }
+
   .header-inner {
     gap: 10px;
   }
@@ -422,8 +468,15 @@ main {
     align-items: stretch;
   }
 
-  .button {
+  .hero-actions .button,
+  .page-main .button {
     width: 100%;
+  }
+
+  .promo-banner-cta {
+    display: inline-block;
+    margin-left: 0;
+    margin-top: 2px;
   }
 
   .header-inner {
